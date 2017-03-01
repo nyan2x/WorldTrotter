@@ -8,12 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		93E189C91E6555B2001BD03E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93E189C81E6555B2001BD03E /* AppDelegate.swift */; };
-		93E189CB1E6555B2001BD03E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93E189CA1E6555B2001BD03E /* ViewController.swift */; };
 		93E189CE1E6555B2001BD03E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 93E189CC1E6555B2001BD03E /* Main.storyboard */; };
 		93E189D01E6555B2001BD03E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 93E189CF1E6555B2001BD03E /* Assets.xcassets */; };
 		93E189D31E6555B2001BD03E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 93E189D11E6555B2001BD03E /* LaunchScreen.storyboard */; };
 		93E189DE1E6555B2001BD03E /* WorldTrotterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93E189DD1E6555B2001BD03E /* WorldTrotterTests.swift */; };
 		93E189E91E6555B2001BD03E /* WorldTrotterUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93E189E81E6555B2001BD03E /* WorldTrotterUITests.swift */; };
+		93E189F91E667015001BD03E /* ConversionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93E189F81E667015001BD03E /* ConversionViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +36,6 @@
 /* Begin PBXFileReference section */
 		93E189C51E6555B2001BD03E /* WorldTrotter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WorldTrotter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		93E189C81E6555B2001BD03E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		93E189CA1E6555B2001BD03E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		93E189CD1E6555B2001BD03E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		93E189CF1E6555B2001BD03E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		93E189D21E6555B2001BD03E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +46,7 @@
 		93E189E41E6555B2001BD03E /* WorldTrotterUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WorldTrotterUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		93E189E81E6555B2001BD03E /* WorldTrotterUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorldTrotterUITests.swift; sourceTree = "<group>"; };
 		93E189EA1E6555B2001BD03E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		93E189F81E667015001BD03E /* ConversionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConversionViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,8 +98,8 @@
 			isa = PBXGroup;
 			children = (
 				93E189C81E6555B2001BD03E /* AppDelegate.swift */,
-				93E189CA1E6555B2001BD03E /* ViewController.swift */,
 				93E189CC1E6555B2001BD03E /* Main.storyboard */,
+				93E189F81E667015001BD03E /* ConversionViewController.swift */,
 				93E189CF1E6555B2001BD03E /* Assets.xcassets */,
 				93E189D11E6555B2001BD03E /* LaunchScreen.storyboard */,
 				93E189D41E6555B2001BD03E /* Info.plist */,
@@ -259,7 +259,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				93E189CB1E6555B2001BD03E /* ViewController.swift in Sources */,
+				93E189F91E667015001BD03E /* ConversionViewController.swift in Sources */,
 				93E189C91E6555B2001BD03E /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -415,6 +415,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = MB.WorldTrotter;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -427,6 +428,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = MB.WorldTrotter;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
